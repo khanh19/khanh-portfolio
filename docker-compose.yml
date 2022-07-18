@@ -1,0 +1,12 @@
+version: '2.2'
+services: 
+   frontend:
+     build: 
+        context: .
+     ports:
+       - "3000:3000"
+     container_name: frontend
+     image: frontend
+     volumes:
+        - ./src:/app/src
+
